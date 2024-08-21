@@ -104,7 +104,7 @@ public class ColorManager
                 int append = value.StartsWith("#") ? 1 : 0;
                 r = Convert.ToInt32(value.Substring(append, 2), 16);
                 g = Convert.ToInt32(value.Substring(2+append, 2), 16);
-                b = Convert.ToInt32(value.Substring(2+append, 2), 16);
+                b = Convert.ToInt32(value.Substring(4+append, 2), 16);
             }catch(Exception e){
                 Debug.LogError(e.Message);
             }
